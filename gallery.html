@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="new-body">
+
+
+
+      <header>
+        <nav>
+            <ul class="nav-links">
+                <a class="nav-logo" href="">Milky Shakes</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="ayda.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="img/milkshake2.jpg" style="width:100%">
+  <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis soluta vel, totam, dolorum eius fuga labore earum, quos voluptate quasi esse inventore nisi accusantium optio ratione voluptates eos repudiandae animi.</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/milkshake3.jpg" style="width:100%">
+    <div class="text">Our summer edition</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/milkshake2.jpg" style="width:100%">
+    <div class="text">Winter edition collection</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/milkshake3.jpg" style="width:100%">
+    <div class="text">Spring collection</div>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="img/milkshake2.jpg" style="width:100%">
+  <div class="text">Caption exampel</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="img/milkshake3.jpg" style="width:100%">
+  <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam commodi soluta sit, quaerat dolorem at sed nisi iusto totam doloremque a error ex porro temporibus! Dolore hic pariatur expedita ipsam.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<div class="headline">Gallery</div>
+
+
+<div class="grid-container">
+  <div class="picture1">
+   <img src="img/milkshake3.jpg" style="width:100%">
+  </div>
+  <div class="picture2">
+   <img src="img/milkshake2.jpg" style="width:100%">
+  </div>
+  <div class="picture3">
+    <img src="img/milkshake3.jpg" style="width:100%">
+  </div>
+  <div class="picture4">
+   <!--- <img src="milkshake2.jpg" style="width:100%">-->
+  </div>
+  <div class="picture5">
+    <img src="img/milkshake3.jpg" style="width:100%">
+  </div>
+  <div class="picture6">
+    <img src="img/milkshake2.jpg" style="width:100%">
+  </div>
+
+
+</div>
+
+
+<div class="flexbox-container1">
+  <div class="image1">
+    <img src="img/milkshake2.jpg" style="width:100.5%">
+  </div>
+  <div class="image2">
+    <img src="img/milkshake3.jpg" style="width:100.5%">
+  </div>
+  <div class="image3">
+    <img src="img/milkshake2.jpg" style="width:100.5%">
+  </div>
+ <div class="image4">
+    <img src="img/milkshake3.jpg" style="width:100.5%">
+  </div>
+ <div class="image5">
+    <img src="img/milkshake2.jpg" style="width:100%">
+  </div>
+  <div class="image6">
+    <img src="img/milkshake3.jpg" style="width:100%">
+  </div> 
+  <div class="image7">
+    <img src="img/milkshake2.jpg" style="width:100%">
+  </div>
+  <div class="image8">
+    <img src="img/milkshake3.jpg" style="width:100%">
+  </div>
+  
+</div>
+<footer>
+  <p> Milky Shakes <br>
+      Box 123 <br>
+      Sibarstorget 1 <br>
+      146 45 Häststallet</p>
+
+  <section class="social-media">
+      <img src="img/logo-facebook.svg" alt="">
+      <img src="img/logo-twitter.svg" alt="">
+      <img src="img/logo-instagram.svg" alt="">
+  </section>
+
+  <a href="contact.html">Contact us!</a>
+</footer>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</html> 
